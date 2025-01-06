@@ -77,6 +77,7 @@ public class Main {
             max = c;
         }
         System.out.println("Максимальное число: " + max);
+        System.out.println( "\nКонец");
     }
 }
 
