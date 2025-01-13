@@ -15,9 +15,9 @@ public class Main {
             System.out.println("Можно идти без шапки");
         }
         System.out.println("\nTask 3");
-        int speed = 60;
-        if (speed >= 60 && speed <= 55) {
-            System.out.println("Высокая скорость,придет заплатить штраф");
+        int speed = 59;
+        if (speed >= 60) {
+            System.out.println("Если  скорость " + speed + ",придет заплатить штраф");
         } else {
             System.out.println("Можно ездить спокойно");
         }
@@ -36,8 +36,8 @@ public class Main {
             System.out.println(" Если возраст человека равен " + age + " то стоит ходить на работу");
         }
         System.out.println("\nTask 5");
-        int limiter = 6;
-        if (limiter <= 5) {
+        int limiter = 4;
+        if (limiter < 5) {
             System.out.println("Если возраст ребенка " + limiter + " то ему нельзя кататься на ауттракционе");
         }
         if (limiter >= 5 && limiter <= 14) {
@@ -77,7 +77,7 @@ public class Main {
             max = c;
         }
         System.out.println("Максимальное число: " + max);
-        System.out.println( "\nКонец");
+        System.out.println("\nКонец");
     }
 }
 
