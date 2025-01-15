@@ -47,21 +47,16 @@ public class Main {
             System.out.println("Если возраст ребенка " + limiter + " то он может кататься без взрослого ");
         }
         System.out.println("\nTask 6");
-        int carriage = 102;
-        int seating = 60;
-        int standing = carriage - seating;
-        if (standing >= 0) {
-            System.out.println("Не хватает мест: " + standing + " места.");
-            int people = 144;
-            int capacity = 102;
-            if (people <= capacity) {
-                System.out.println(" Есть свободные места в вагоне.");
-            } else {
-                int excess = people - capacity;
-                System.out.println("В вагоне недостаточно мест. Необходимо еще " + excess + " мест.");
-            }
+        int places = 78;
+        if (places > 102) {
+            System.out.println("В вагоне нет свободных мест");
         } else {
-            System.out.println("Все пассажиры смогут разместиться в вагоне.");
+            if (places <= 60) {
+                System.out.println("В вагоне есть свободные сидячие места ");
+            }
+            if (places > 60 && places < 102) {
+                System.out.println("В вагоне есть свободные стоячие места");
+            }
         }
         System.out.println("\nTask 7");
 
